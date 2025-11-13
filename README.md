@@ -1,3 +1,3 @@
-# Nuursend - Mass SMS Messaging Platform
+# Nuursend - Mass SMS Platform
 
-This repository contains the codebase for a bulk SMS messaging platform.
+Initial project structure.
