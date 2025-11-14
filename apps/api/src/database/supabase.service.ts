@@ -6,18 +6,26 @@ export class SupabaseService implements OnModuleInit {
   private supabase: SupabaseClient;
 
   constructor() {
-    // Supabase client initialization
-    // Implementation by Codex
+    // Constructor kept empty - initialization happens in onModuleInit
   }
 
   onModuleInit() {
-    // Initialize Supabase client
-    // Implementation by Codex
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseKey = process.env.SUPABASE_SERVICE_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error(
+        'Missing required environment variables: SUPABASE_URL and SUPABASE_SERVICE_KEY must be set'
+      );
+    }
+
+    this.supabase = createClient(supabaseUrl, supabaseKey);
   }
 
   getClient(): SupabaseClient {
-    // Return Supabase client instance
-    // Implementation by Codex
+    if (!this.supabase) {
+      throw new Error('Supabase client not initialized. Ensure OnModuleInit has been called.');
+    }
     return this.supabase;
   }
 }
