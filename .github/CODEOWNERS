@@ -1,0 +1,20 @@
+# CODEOWNERS file
+# These owners will be the default owners for everything in the repo
+# They will be requested for review when someone opens a pull request
+
+# Global owners
+* @FHNexius
+
+# Backend code
+/apps/api/ @FHNexius
+/packages/sms-core/ @FHNexius
+
+# Frontend code
+/apps/web/ @FHNexius
+
+# Database migrations
+/supabase/migrations/ @FHNexius
+
+# CI/CD and configuration
+/.github/ @FHNexius
+
