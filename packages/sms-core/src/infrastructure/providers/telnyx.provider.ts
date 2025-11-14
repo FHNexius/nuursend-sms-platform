@@ -21,8 +21,8 @@ export class TelnyxProvider implements ISmsProvider {
     try {
       // Dynamic import to avoid requiring telnyx as a hard dependency
       // eslint-disable-next-line @typescript-eslint/no-require-imports
-      const Telnyx = require('@telnyx/telnyx');
-      this.client = new Telnyx(this.apiKey);
+      const Telnyx = require('telnyx');
+      this.client = Telnyx(this.apiKey);
     } catch (error) {
       // Telnyx not installed
       this.client = null;

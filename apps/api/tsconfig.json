@@ -18,10 +18,10 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "paths": {
-      "@/*": ["./src/*"],
-      "@nuursend/sms-core": ["../../packages/sms-core/src"],
-      "@nuursend/types": ["../../packages/types/src"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["src/**/*"],

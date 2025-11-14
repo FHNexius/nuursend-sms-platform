@@ -26,7 +26,7 @@
   "peerDependencies": {
     "twilio": "^4.19.0",
     "@vonage/server-sdk": "^3.12.0",
-    "@telnyx/telnyx": "^2.0.0"
+    "telnyx": "^2.0.0"
   },
   "peerDependenciesMeta": {
     "twilio": {
@@ -35,7 +35,7 @@
     "@vonage/server-sdk": {
       "optional": true
     },
-    "@telnyx/telnyx": {
+    "telnyx": {
       "optional": true
     }
   }
